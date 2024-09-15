@@ -110,24 +110,24 @@ export const HelpcenterLists = [
     name: "About",
     link: "/",
     islink: false,
-    icon: CgProfile,
+    
   },
   {
     name: "Contract Us",
     link: "/Nftai",
     islink: false,
-    icon: CgProfile,
+    
   },
   {
     name: "Sign Up",
     link: "/Work",
     islink: false,
-    icon: CgProfile,
+   
   },
   {
     name: "Supscription",
     link: "/faq",
     islink: false,
-    icon: CgProfile,
+   
   },
 ];
