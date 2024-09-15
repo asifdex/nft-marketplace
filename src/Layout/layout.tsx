@@ -15,7 +15,7 @@ const Layout = (props: any) => {
   }, []);
 
   return (
-    <div className="">
+    <div className="relative">
       <Header/>
         {props.children}
      <Footer/>
