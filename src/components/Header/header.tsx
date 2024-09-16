@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-
 import { logo, logoLight, user1 } from "@/utils";
 import { useTheme } from "next-themes";
 import { Input } from "../ui/InputBox";
 import { HiOutlineMagnifyingGlass } from "react-icons/hi2";
-
 import DropMenuBtn from "./DropMenuBtn";
 import { Moon, Sun } from "lucide-react";
 import { HiOutlineBellAlert } from "react-icons/hi2";
 import { FaChevronDown } from "react-icons/fa";
-import Link from "next/link";
+import Link from 'next/link';
+
 import {
   DiscoverLists,
   HelpcenterLists,
