@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import Image from "next/image";
+
 import { logo, logoLight, user1 } from "@/utils";
 import { useTheme } from "next-themes";
 import { Input } from "../ui/InputBox";
 import { HiOutlineMagnifyingGlass } from "react-icons/hi2";
-import Link from "next/link";
+
 import DropMenuBtn from "./DropMenuBtn";
 import { Moon, Sun } from "lucide-react";
 import { HiOutlineBellAlert } from "react-icons/hi2";
 import { FaChevronDown } from "react-icons/fa";
+import Link from "next/link";
 import {
   DiscoverLists,
   HelpcenterLists,
@@ -27,13 +28,25 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed px-5  md:px-10 lg:px-15 xl:px-20 py-8 w-full h-24 md:h-40  z-9  dark:bg-black bg-white  flex items-center justify-between  ">
+    <div className="fixed px-5  md:px-10 lg:px-15 xl:px-20 py-8 w-full h-24 md:h-40  z-9 opacity-85 shadow-lg dark:bg-black bg-white  flex items-center justify-between  ">
       <div className="flex items-center flex-grow  gap-4 xl:gap-14 ">
         <Link href="/">
           {theme == "dark" ? (
-            <Image src={logoLight} width={120} height={50} alt="logo.png" />
+            <img
+              src={logoLight}
+              width={120}
+              height={50}
+              alt="logo.png"
+              className="object-contain"
+            />
           ) : (
-            <Image src={logo} width={120} height={50} alt="logo.png" />
+            <img
+              src={logo}
+              width={120}
+              height={50}
+              alt="logo.png"
+              className="object-contain"
+            />
           )}
         </Link>
         <div className="hidden lg:flex relative mt-2">
@@ -66,7 +79,7 @@ const Header = () => {
           />
         </div>
         <span className="w-[2px] h-6 bg-white opacity-75 hidden md:flex " />
-        <div className="flex  gap-10 md:gap-9 xl:gap-14 items-center justify-around">
+        <div className="flex gap-2 smPro:gap-7 sm:gap-10 md:gap-9 xl:gap-14 items-center justify-around">
           <div
             onClick={() =>
               theme == "dark" ? setTheme("light") : setTheme("dark")
@@ -80,7 +93,6 @@ const Header = () => {
               extraThings={<HiOutlineBellAlert className="text-2xl" />}
             />
 
-            {/* */}
             <span className="w-3 h-3 p-1 rounded-full dark:bg-[#0044ff] bg-green-500 absolute -right-2 -top-2" />
           </div>
 
@@ -94,7 +106,6 @@ const Header = () => {
             text="profile"
             isIconAvailable={true}
             data={ProfileLists}
-            extraThings={user1}
           />
           <div className="md:hidden">
             <CustomBtn

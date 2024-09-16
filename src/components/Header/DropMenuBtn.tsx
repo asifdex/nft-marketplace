@@ -1,8 +1,7 @@
 import { DropDownMenu } from "@/types";
 import React from "react";
-import { User } from "lucide-react";
+// import Image from "next/image";
 
-import Image from "next/image";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -24,14 +23,16 @@ const menus = ({
     <DropdownMenu modal={false} >
       <DropdownMenuTrigger asChild>
         <div className={`flex justify-center items-center gap-1 ${otherCss}`}>
-          {text == "profile" ? (
-            <Image src={user1} width={50} height={50} alt="profile Image" className="rounded-full "/>
+           {text == "profile" ? (
+            <div className="relative w-14 h-14 rounded-full">
+              <img src={user1} alt="profile" className="absolute object-cover rounded-full"  />
+            </div>
           ) : (
-            <>
+            <> 
               <div>{text}</div>
               <div className="mt-1">{extraThings}</div>
-            </>
-          )}
+           </>
+          )} 
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">

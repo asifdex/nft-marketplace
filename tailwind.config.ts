@@ -30,7 +30,7 @@ const config: Config = {
          "lightGray":"#A5BBD0"
       },
       screens: {
-        'smPro': {'min': '430px'},
+        'smPro':  '430px',
         'phone': {'max': '500px'},
         'minphone': {'min': '500px'},
         'middlePro': {'max': '350px'},
