@@ -22,7 +22,7 @@ const menus = ({
   return (
     <DropdownMenu modal={false} >
       <DropdownMenuTrigger asChild>
-        <div className={`flex justify-center items-center gap-1 ${otherCss}`}>
+        <div className={`flex justify-center items-center ${otherCss} `}>
            {text == "profile" ? (
             <div className="relative w-14 h-14 rounded-full">
               <img src={user1} alt="profile" className="absolute object-cover rounded-full"  />
@@ -35,7 +35,7 @@ const menus = ({
           )} 
         </div>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
+      <DropdownMenuContent className="w-56 ">
         <DropdownMenuSeparator />
         {data?.map((items, idx) => (
           <DropdownMenuItem key={idx} className="flex">

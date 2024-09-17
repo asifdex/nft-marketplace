@@ -6,33 +6,7 @@ import { MdLiveHelp } from "react-icons/md";
 import { FaDownload } from "react-icons/fa";
 import { MenuItem } from "@/types";
 
-export const HeaderLists = [
-  {
-    name: "Home",
-    link: "/",
-    islink: false,
 
-    icon: CgProfile,
-  },
-  {
-    name: "Create Your Own NFT",
-    link: "/Nftai",
-    islink: false,
-    icon: CgProfile,
-  },
-  {
-    name: "How its Work?",
-    link: "/Work",
-    islink: false,
-    icon: CgProfile,
-  },
-  {
-    name: "FaQs",
-    link: "/faq",
-    islink: false,
-    icon: CgProfile,
-  },
-];
 
 export const ProfileLists: MenuItem[] = [
   {

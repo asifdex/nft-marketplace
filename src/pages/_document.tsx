@@ -10,7 +10,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <title>Matar</title>
+        <title>nft marketplace</title>
         <meta
           name="description"
           content=""

@@ -4,7 +4,6 @@ import AOS from "aos";
 import Header from "@/components/Header/header";
 import Footer from "@/components/footer/Footer";
 
-
 const Layout = (props: any) => {
   useEffect(() => {
     AOS.init({
@@ -15,10 +14,10 @@ const Layout = (props: any) => {
   }, []);
 
   return (
-    <div className="relative">
-      <Header/>
-        {props.children}
-     <Footer/>
+    <div className="flex min-h-screen" style={{flexDirection:"column"}}>
+      <Header />
+      <main className="flex-grow">{props.children}</main>
+      <Footer />
     </div>
   );
 };

@@ -18,5 +18,6 @@ declare type CustomButtonProps= {
     text:string | ReactNode ,
     type ?:"submit" | "button";
     handelClick?:() => void;
-    otherCss?:string
+    otherCss?:string,
+    icon?:ReactNode,
 }
